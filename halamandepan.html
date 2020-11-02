@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" media="all" href="light.css" id="change-css">
+  <script src="https://kit.fontawesome.com/92432b1345.js" crossorigin="anonymous"></script>
+  <link rel="alternate stylesheet" media="all" href="dark.css" id="change-css">
+  <link rel="stylesheet" href="responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <title>AYAM POTONG TALIWANG</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-list">
+      <a href="#">Tentang</a>
+      <a href="#">Menu</a>
+      <a href="#">Kontak</a>
+    </div>
+    <div class="header-center">
+      <div class="header-logo">UD. CAHYANI</div>
+    </div>
+    <div class="header-right">
+      <a href="#">Daftar</a>
+      <a href="#">Masuk</a>
+    </div>
+  </header>
+  <div class="top-wrapper">
+    <div class="container">
+      <h1 style="color: coral;">SELAMAT DATANG DI</h1>
+      <h2>UD.CAHYANI</h2>
+      <p>UD. CAHYANI adalah Usaha Dagang Produksi Hasil Peternakan Ayam Potong dan Ayam Kampung.</p>
+      <p>Serta Penyedia Jasa Penetasan Telur Ayam Kampung dan Jasa Pencabutan Bulu Ayam</p>
+      <p>Kami Melayani pembelian secara langsung ke Toko Kami atau Melalui Layanan Pesan Antar</p>
+      <p></p>
+    </div>
+  </div>
+  <div class="lesson-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h3>Apa saja yang ada di UD. Cahyani?</h3>
+      </div>
+      <div class="lessons">
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="1.png" width="160" height="190">
+            <p>Ayam Potong</p>
+          </div>
+          <p class="txt-contents">Tersedia Ayam Potong yang sudah bersih maupun yang masih hidup dengan berat yang
+            beragam sesuai keinginan.</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="4.png" width="160" height="190">
+            <p>Ayam Kampung</p>
+          </div>
+          <p class="txt-contents">Ayam kampung yang tersedia adalahhasil ternak sendiri dengan perawatan dan
+            pemberian nutrisi terbaik.</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="2.png" width="160" height="190">
+            <p>Alat Penetas Telur Ayam</p>
+          </div>
+          <p class="txt-contents">Jasa Penetasan Telur Ayam dengan mesin berkualitas untuk mempercepat waktu penetasan
+            telur ayam</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="5.png" width="160" height="190">
+            <p>Mesin Perontok Bulu Ayam</p>
+          </div>
+          <p class="txt-contents">Jasa pencabutan bulu ayam menggunakan mesin perontok bulu ayam yang berkualitas.</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="3.png" width="160" height="190">
+            <p>Telur Ayam</p>
+          </div>
+          <p class="txt-contents">Kami menyediakan telur ayam ras dan ayam kampung yang berkualitas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="massage-wrapper">
+    <div class="container-2">
+      <div class="heading">
+        <h4>Bagaimana cara memesan?</h4>
+      </div>
+      <div class="orders">
+        <div class="order">
+          <div class="order-icon">
+            <img src="peta1.jfif" width="160" height="190">
+            <p>LANGSUNG DATANG KE ALAMAT KAMI</p>
+          </div>
+          <p class="txt-contents">RT 02 RW 08 KELURAHAN KUANG TALIWANG.</p>
+        </div>
+        <div class="order">
+          <div class="order-icon">
+            <img src="delivery.jfif" width="160" height="190">
+            <p>Layanan Pesan Antar</p>
+          </div>
+          <p class="txt-contents">Kami melayani layanan pesan antar untuk Taliwang dan sekitarnya dengan syarat dan
+            ketentuan berlaku.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form">
+    <h5 class="section-title">Hubungi Kami</h5>
+    <p>Jika menemui kendala pemesanan</p>
+    <p>Nomor Handphone</p>
+    <input>
+    <p>Pesan</p>
+    <textarea></textarea>
+    <input class="contact-submit" type="submit" value="Send">
+  </div>
+  <div class="footer">
+    <div class="footer-logo">UD. CAHYANI</div>
+    <div class="footer-list">
+      <a href="#">Tentang</a>
+      <a href="#">Menu</a>
+      <a href="#">Kontak</a>
+    </div>
+    <div class="button-group">
+      <button id="change-button1" onclick="changeDark()">Dark Mode</button>
+      <button id="change-button2" onclick="changeLight()">Light Mode</button>
+    </div>
+</body>
+<script>
+  document.getElementById("change-button1").onclick = function changeDark() {
+      document.getElementById("change-css").href = "dark.css";
+    };
+    document.getElementById("change-button2").onclick = function changeLight() {
+      document.getElementById("change-css").href = "light.css";
+    };
+</script>
+
+</html>
